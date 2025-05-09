@@ -122,3 +122,44 @@ set => unordered and imutable, allows addition and removal of items . doesn't  a
 
 
 dictionary => unodered and can change the items 
+
+
+<!-- intro to oop -->
+class => data::attribute and functionalities::methods::behaviours
+
+vehicle => attributes:: model, year, brand
+         behaviours(methods): start, stop
+
+         <!-- object/instance -->
+         Nissan Note
+         Demio
+         Bugatti
+
+ person => attributes:: name,gender, age, name
+        methods: sleep, walk, run
+
+        <!-- instances -->
+        Person_1
+        Person_2
+
+
+<!-- attribute -->
+<!-- instanace attributes -->
+affects a particular instance
+demio.brand
+person.age
+
+<!-- class attributes -->
+affects the whole class
+
+<!-- methods -->
+<!-- instance methods -->
+affects an instance
+demio.start()
+person_1.run()
+
+
+<!-- class methods  -->
+applicable on a class
+student_count
+vehicle.student_count()

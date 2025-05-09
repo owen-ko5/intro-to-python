@@ -1,17 +1,35 @@
-# vehicle => attributes:: model, year, brand
-#         behaviours(methods): start, stop
+class Vehicle:
+    count = 0
+    vehicle_list = []
+    
+    def __init__ (self, brand, model, year):
+        self.brand = brand
+        self.model = model
+        self.year = year
+        self.vehicle_count()
+        self.vehicle_collection(self)
 
-# person => attributes:: name,gender, age, name
-#        methods: sleep, walk, run
-        
+    def start(self):
+        print(f'{self.brand} is starting.............vooooooooo')
 
-class Vehicle()
+    @classmethod
+    def vehicle_count(cls):
+        cls.count +=1
 
-benz = Vehicle()
-bugatti = Vehicle()
-Demio = Vehicle()
+    @classmethod
+    def vehicle_collection(cls, new_vehicle):
+        cls.vehicle_list.append(new_vehicle)
 
-class Person()
 
-owen = Person()
-mitchelle = Person()    
+
+
+car1 = Vehicle("bmw", "M5", "2015")
+car2 = Vehicle("Mazda", "CX9", "2015")
+car3 = Vehicle("Audi", "r5", "2015")
+
+print(car1.start())
+print(car2.start())
+print(car3.start())
+
+print(Vehicle.count)
+print(Vehicle.vehicle_list)
